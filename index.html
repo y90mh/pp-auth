@@ -1,0 +1,9 @@
+<!doctype html><meta name="viewport" content="width=device-width,initial-scale=1"><title>Performance Pack</title>
+<body style="background:#17171b;color:#eee;font-family:sans-serif;text-align:center;padding-top:20vh">
+<h3>Entrando…</h3><p>Se o app não abrir, toque no botão.</p>
+<a id="b" style="display:inline-block;padding:14px 28px;border-radius:12px;background:#4f46e5;color:#fff;text-decoration:none">Abrir Performance Pack</a>
+<script>
+var p=(location.hash||'').replace(/^#/,'')||(location.search||'').replace(/^\?/,'');
+var u='intent://oauth?'+p+'#Intent;scheme=perfpack;package=com.example.perfpack;end';
+document.getElementById('b').href=u;location.replace(u);
+</script>
